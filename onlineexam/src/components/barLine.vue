@@ -1,0 +1,166 @@
+<template>
+    <div class="barLine" :id="id"></div>
+</template>
+<script>
+import echarts from 'echarts'
+export default {
+    name:'barLine',
+    props:{
+       id:{
+           type:String,
+           required:true
+        },
+        type:{
+            type:Array,
+            required:false,
+            default:function(){
+                return  ['bar','line'] 
+            }                                                          
+        },
+        xData:{
+            type:Array,
+            required:true
+        },
+        max:{
+            type:Number,
+            required:false,
+            default:200
+        },
+        min:{
+            type:Number,
+            required:false,
+            default:10
+        },
+        dataList:{
+            type:Array,
+            required:true
+        },
+        seriesType:{
+            type:String,
+            required:true
+        }
+    },
+    data(){
+        return{         
+           echarts:'' 
+        }
+    },
+    mounted(){
+      this.initEchartsLine();
+    }, 
+    watch:{
+        dataList(){
+            if(this.dataList){
+                this.initEchartsLine();
+            }
+        }
+    },
+    methods:{
+        initEchartsLine(){
+            this.echarts=echarts.init(document.getElementById(this.id));
+            var option={
+                title:{
+                    text:'',
+                    textStyle:{
+                        fontWeight:400,
+                        fontSize:'20px'
+                    }
+                },
+                //提示框组件
+                tooptip:{
+                    show:true,
+                    trigger:'axis'
+                },
+                //工具栏
+                toolbox:{
+                    show:true,
+                    feature:{
+                        magicType:{
+                            show:true,
+                            type:this.type
+                        }
+                    },
+                    right:'6%'
+                },
+                //横坐标
+                xAxis:{
+                    type:'category',
+                    data:this.xData,
+                    axisLine:{
+                        lineStyle:{
+                            type:'solid',
+                            color:'#333',
+                            width:'1'
+                        }
+                    },
+                    axisTick:{
+                        show:true
+                    },
+                    axisLabel:{
+                        textStyle:{
+                            color:'#333'
+                        }
+                    }
+                },
+                //纵坐标
+                yAxis:{
+                    name:'',
+                    max:this.max,
+                    type:'value',
+                    axisLine:{
+                        show:true
+                    },
+                    axisTick:{
+                        show:true
+                    },
+                    axisLabel:{
+                        textStyle:{
+                            color:'#333'
+                        }
+                    },
+                    minInterval:this.min,
+                    splitLine:{
+                        lineStyle:{
+                            color:'#f6f6f6'
+                        }
+                    }
+                },
+                series:[{
+                    name:'',
+                    type:this.seriesType,
+                    data:this.dataList,
+                    itemStyle:{
+                        normal:{
+                            color:'#99E4DC',
+                            // color: function(params){
+                            //     var colorList=[
+                            //         '#55A8FD','#5FDAC7','#FA7D7D','#AEB3B8','#92C789','#6A6A6A'
+                            //     ]
+                            //     return colorList[params.dataIndex]
+                            // },
+                            label:{
+                                show:true,
+                                position:'top',
+                                textStyle:{
+                                    color: '#333',
+                                    fontSize:14,
+                                    fontWeight:500
+                                }
+                            }
+                        }
+                    },
+                    barWidth:35
+                }]
+            }
+            this.echarts.setOption(option);
+        }
+    }
+}
+</script>
+<style lang="less" scoped>
+.barLine{
+    height: 100%;
+    width:100%;
+}
+</style>
+

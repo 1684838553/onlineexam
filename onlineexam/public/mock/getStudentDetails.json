@@ -1,0 +1,16 @@
+{
+    "studentDetail":{
+        "userId":"1",
+        "name":"李华",
+        "account":"13555556644",
+        "email":"123@qq.com",
+        "telephone":"13555556644",
+        "WeChat":"jcdcdc",
+        "gender":"男",
+        "status":"正常",
+        "cretime":"2019-12-31",
+        "QQ":"1356767878",
+        "pictrue":"https://www.baidu.com/link?url=y0M0iIEnJLP1hAPiSscRS5kNpyd14pHWs3ty8BwCMvBLyFWY4_D0iYDaIiGUIfhE5xEzbjMFUd8e9d4ZIoGmuJA_vJ6FX8tBHphz6Ob51RCaBhXtHXDVkridBxVviWFdewdRk5f30uAnb5FxZcCK6_o1LJlEUz-TeaeuhDvROLwjfor7ToVqzlDdcrKvtSMCVz4QgCeIkEICXgB4nVHsQzWYSACGisHQqpP66rQkxtORFDXZQ3byVFInNxMeZt0Hysprs1_N4SZhhVoHj4VaQWdO749MLy-rVekbFnXXceC9Pp7y0tkYVW7YWm4cTZw8PcFc8HHdmOGAifL-ahEOvVbLqx6AW44vZL7IOdpbqua3xT65FLx5L12G6jsbETcWXJCw184fC3IaF-xu-mtWHDWcuGqVuyH8eHMePjYjYltswn8dp6_HNITrN1ZsZeSywdsHBYwO8AqfZemV9w8aIDfCY_okB4TAtilEd4M8tcGw5twkgPy-LoyyJMc019SqwV3ujkQS0r-513dtPfon3rqUqnC1dC5ddASfdObLzCmJpGn3dc2ETjAeJzvwri0QExyU7GIIO-EQLeLuu4pqsm-ctxSLgMISMhQKlRfoxeXM7PvcY7NWn2nJiFZmCL6hqmA9IGFESPZe_6cuZJe-PJhAON9a9V0nUWUauGJWTB3&timg=https%3A%2F%2Fss0.bdstatic.com%2F94oJfD_bAAcT8t7mm9GUKT-xh_%2Ftimg%3Fimage%26quality%3D100%26size%3Db4000_4000%26sec%3D1579174215%26di%3Da9d247da6b3424fe9e60996de385b93c%26src%3Dhttp%3A%2F%2Fv1.qzone.cc%2Fpic%2F201801%2F07%2F12%2F16%2F5a519f29a4619573.jpg!600x600.jpg&click_t=1579174222400&s_info=1519_754&wd=&eqid=a3997f0400007642000000065e204947",
+        "address":"江西九江"
+    }
+}

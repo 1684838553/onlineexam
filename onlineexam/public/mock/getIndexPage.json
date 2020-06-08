@@ -1,0 +1,58 @@
+{
+    "cards":[
+        {
+            "icon":"<i class='el-icon-star-off'></i>",
+            "title":"学生数量",
+            "total":"102125"
+        },
+        {
+            "icon":"<i class='el-icon-user-solid'></i>",
+            "title":"老师数量",
+            "total":"920000"
+        },
+        {
+            "icon":"<i class='el-icon-view'></i>",
+            "title":"考试场数",
+            "total":"34"
+        },
+        {
+            "icon":"<i class='el-icon-chat-square'></i>",
+            "title":"信息发布",
+            "total":"13条"
+        }
+    ],
+    "userData":{
+        "xData":["周一","周二","周三","周四","周五","周六","周日"],
+        "dataList":["2500","500","8868","856","5000","6000","4561"]
+    },
+    "examData":{
+        "xData":["2015","2016","2017","2018","2019","2020"],
+        "dataList":["2500","4500","2168","8156","54000","6000","46561"]
+    },
+    "testItem":[{
+        "name":"英语四级",
+        "startTime":"2019-1-1",
+        "endTime":"2019-3-1",
+        "status":"进行中"
+    },{
+        "name":"计算机二级模拟考试",
+        "startTime":"2018-1-1",
+        "endTime":"2018-3-1",
+        "status":"已完成"
+    },{
+        "name":"c++语言程序设计",
+        "startTime":"2019-1-1",
+        "endTime":"2019-3-1",
+        "status":"待定"
+    },{
+        "name":"java语言程序设计",
+        "startTime":"2019-1-1",
+        "endTime":"2019-3-1",
+        "status":"未开始"
+    },{
+        "name":"高等数学",
+        "startTime":"2019-1-1",
+        "endTime":"2019-3-1",
+        "status":"进行中"
+    }]
+}

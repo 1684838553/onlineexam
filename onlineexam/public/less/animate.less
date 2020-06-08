@@ -1,0 +1,62 @@
+//从上到下的过度 name:slide-fade
+.slide-fade-enter-active {
+    transition: all 0.3s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.3s ease;
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+    transform: translateY(-300px);
+    opacity: 0;
+}
+
+//从上到下的过度 name:slide
+.slide-enter-active {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.slide-leave-active {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.slide-enter,
+.slide-leave-to {
+    transform: translateY(-10px);
+    opacity: 0;
+}
+
+//弹性动画 name: bounce
+.bounce-enter-active {
+    animation: bounce-in .3s;
+}
+
+.bounce-leave-active {
+    animation: bounce-in .3s reverse;
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+//放大退出动画 name:scale-leave
+.scale-enter-active {
+    opacity: 0;
+}
+
+.scale-leave-leave-active {
+    transition: all .1s ease;
+    opacity: 0;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
